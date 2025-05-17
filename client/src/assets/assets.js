@@ -170,6 +170,12 @@ export const stories=[
     image: trade,
   },
 ]
+export const faqs = [
+  { question: "What makes your trading approach different?" },
+  { question: "How long does it take to become profitable?" },
+  { question: "What markets do you trade?" },
+];
+
 export const assets = {
   logo,
   left,
