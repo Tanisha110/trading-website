@@ -11,8 +11,8 @@ const Blogs = () => {
         Blog's
       </h1>
       <p className="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
-        Explore in-depth articles on trading strategies, market analysis, and psychological insights to
-        enhance your trading journey.
+        Explore in-depth articles and on trading strategies, market analysis, and psychological insights to
+        enhance your trading journey .
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
