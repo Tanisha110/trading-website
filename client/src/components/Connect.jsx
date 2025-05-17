@@ -82,7 +82,7 @@ const Connect = () => {
           </div>
 
         {/* Right side */}
-<div className="hidden lg:block flex-1">
+<div className=" flex-1">
   <div className="bg-[#f8faf9] p-8 rounded-lg shadow-md">
     <h2 className="text-2xl font-bold text-[#2c5530] mb-8">Contact Information</h2>
 

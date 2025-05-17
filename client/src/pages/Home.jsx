@@ -16,20 +16,37 @@ import {assets} from "../assets/assets.js";
 export default function Home() {
   return (
     <div className="bg-[#f5fefa] text-black">
-      {/* First section: Navbar + Carousel, full screen with background image */}
-      <section id="home" className="h-screen flex flex-col items-center">
-        <Navbar />
-        <div
-          className="flex flex-1 w-full bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${assets.bg})` }}
-        >
-          <div className="w-[50%] flex items-center justify-start ml-0 pl-0 px-4">
-            <div className="w-full max-w-5xl">
-              <Carousel />
-            </div>
-          </div>
+ <section id="home" className="min-h-[600px] md:h-screen flex flex-col items-center">
+  <Navbar />
+  <div
+    className="flex flex-1 w-full flex-wrap md:flex-nowrap bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: `url(${assets.bg})` }}
+  >
+    {/* Left: Carousel */}
+    <div className="w-full md:w-1/2 flex items-center justify-start px-4 py-6">
+      <div className="w-full max-w-5xl">
+        <Carousel />
+      </div>
+    </div>
+
+    {/* Right: Image Card */}
+    <div className="w-full md:w-1/2 flex items-center justify-center px-4 py-6">
+      <div className="relative h-[300px] w-[220px] sm:h-[400px] sm:w-[260px] md:h-[500px] md:w-[300px] rounded-xl overflow-hidden shadow-2xl">
+        <img
+          src={assets.person}
+          alt="Expert Training Guide"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute bottom-4 left-4 bg-transparent text-white p-4 rounded-xl shadow-lg w-[85%]">
+          <h2 className="text-lg sm:text-xl font-bold mb-1">Expert Training Guide</h2>
+          <p className="text-gray-400 text-sm sm:text-base">
+            Simplify your training journey with our proven strategies.
+          </p>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* About Me section */}
       <section id="aboutus" className="bg-[#1f5f4b] min-h-screen">
