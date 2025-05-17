@@ -8,7 +8,7 @@ const Blogs = () => {
     <div className="max-w-7xl mx-auto px-4 py-10">
       {/* Main Heading with Description */}
       <h1 className="text-3xl sm:text-4xl font-bold mb-3 text-center text-green-800">
-        Blogs
+        Blog's
       </h1>
       <p className="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
         Explore in-depth articles on trading strategies, market analysis, and psychological insights to
