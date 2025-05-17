@@ -18,7 +18,6 @@ const Resource = () => {
             key={index}
             className="bg-white rounded-lg shadow-md flex flex-col max-w-md mx-auto"
           >
-            {/* Image on top with no margin or padding on top/left/right */}
             <div className="overflow-hidden rounded-t-lg">
               <img
                 src={img}

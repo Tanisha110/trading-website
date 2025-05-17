@@ -35,14 +35,14 @@ const Blogs = () => {
             <div className="p-6">
               <div className="flex justify-between text-sm text-gray-500 mb-2">
                 <span>{blogsData[0].date}</span>
-                <span>{blogsData[0].readTime} read</span>
+                <span>{blogsData[0].readTime}</span>
               </div>
               
               <h2 className="text-2xl font-bold text-gray-800 mb-3">
                 {blogsData[0].title}
               </h2>
               
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-500 mb-6">
                 {blogsData[0].description}
               </p>
               
@@ -83,14 +83,14 @@ const Blogs = () => {
               <div className="p-5">
                 <div className="flex justify-between text-sm text-gray-500 mb-2">
                   <span>{blog.date}</span>
-                  <span>{blog.readTime} read</span>
+                  <span>{blog.readTime}</span>
                 </div>
                 
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
                   {blog.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-500 mb-4">
                   {blog.description}
                 </p>
                 

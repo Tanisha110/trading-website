@@ -13,7 +13,7 @@ import person from './person.jpeg'
 export const carouselCards = [
   {
     title1: 'Trade Less',
-    title2: 'Trade Smart',
+    title2: 'Trade Simple',
     quote:
       'We could post our trading rules on the front page of the Wall Street Journal, and still people would not be able to make money from them.',
     author: '— Richard Dennis',
@@ -84,15 +84,14 @@ export const recapCards=[
   },
   {
     title: 'Double Bottom Bull Flag',
-    description:'Learn how to recognize and manage emotions that impact your trading',
-    successrate:'82',
+    description:'A Powerful continuation pattern that forms during an uptrend, suggesting further bullish',
     img: graph,
     link:'/',
 
   },
   {
     title: 'Channel and Triangle pattern',
-    description:'Apply systematic engineening principles to develop robust trading strategies.',
+    description:'A combination pattern showing price movement with parallel lines before breaking out through a triangle formation',
     successrate:'75',
     img: graph,
     link:'/',
@@ -102,18 +101,18 @@ export const whatICards=[
   {
     title:'Stock/Equity Trading ',
     img: trade,
-    points: ["Traded during regular market hours",
-      "Offers a wide range of sectors to choose from",
-      "Heavily influenced by earnings and news",
-      "Ideal for both short-term and long-term strategies",]
+    points: ["Focus on large-cap stocks with high liquidity",
+      "Technical analysis combined with fundamental catalyts",
+      "Risk managed through position sizing and stop losses",
+      "Swing trading opportunities for longer-term positions ",]
   },
   {
     title:'Day Trading',
     img: trade,
-    points:["Market open 24/7, ideal for flexible trading",
-      "Extremely volatile, high reward-risk potential",
-      "Driven by sentiment and macro news",
-      "Great for scalping and momentum plays"],
+    points:["Short-term opportunities in volatile markets",
+      "Price action and volume analysis",
+      "Scalping and momentum trading strategies",
+      "Real-time market analysis and quick decision making"],
   },
 ];
 
@@ -121,13 +120,13 @@ export const blogsData = [
    {
     // Big blog spanning 2 columns
     id: 1,
-    title: "Mastering the Market: A Deep Dive into Trading Strategies",
+    title: "The Engineering Approach to Market Analysis: A Systematic Trading Framework",
     description:
-      "Explore advanced trading strategies that can help you navigate complex markets with confidence and discipline.",
+      "Learn how to apply engineering principles to develop a robust trading system that removes emotional decision-making and focuses on data-driven results",
     img: trade,
     author: {
-      name: "Jane Doe",
-      position: "Senior Market Analyst",
+      name: "Michael Chan",
+      position: "Lead trading Stategist",
       photo: trade,
     },
     date: "May 7, 2024",
@@ -139,7 +138,7 @@ export const sideBlogs = [
  {
     // Small blog #1
     id: 0,
-    title: "Top 5 Mistakes Novice Traders Make",
+    title: "Risk Management: The Foundation of consistent trading",
     description: "Avoid these common pitfalls that trip up many beginner traders.",
     img: trade,
     date: "April 20, 2024",
@@ -150,7 +149,7 @@ export const sideBlogs = [
   {
     // Small blog #2
     id: 1,
-    title: "How to Manage Risk Effectively",
+    title: "Trading Psychology:Managing emotions in Volatile Market",
     description: "Risk management is key for long-term trading success. Learn how to do it right.",
     img: trade,
     date: "April 15, 2024",
