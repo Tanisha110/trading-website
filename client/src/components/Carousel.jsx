@@ -9,7 +9,7 @@ const NextArrow = ({ onClick }) => (
     className="absolute top-1/2 right-[-30px] transform -translate-y-1/2 z-10 cursor-pointer"
     onClick={onClick}
   >
-    <img src={assets.right} alt="Next" className="w-8 h-8" />
+    <img src={assets.right} alt="Next" className="w-16 h-16" />
   </div>
 );
 
@@ -18,7 +18,7 @@ const PrevArrow = ({ onClick }) => (
     className="absolute top-1/2 left-[-30px] transform -translate-y-1/2 z-10 cursor-pointer"
     onClick={onClick}
   >
-    <img src={assets.left} alt="Previous" className="w-8 h-8" />
+    <img src={assets.left} alt="Previous" className="w-16 h-16" />
   </div>
 );
 

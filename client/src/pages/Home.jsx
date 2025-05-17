@@ -11,15 +11,19 @@ import Stories from "../components/Stories";
 import Ques from "../components/Ques";
 import Connect from "../components/Connect";
 import Footer from "../components/Footer";
+import {assets} from "../assets/assets.js"; 
 
 export default function Home() {
   return (
     <div className="bg-[#f5fefa] text-black">
-      {/* First section: Navbar + Carousel, half screen */}
+      {/* First section: Navbar + Carousel, full screen with background image */}
       <section id="home" className="h-screen flex flex-col items-center">
         <Navbar />
-        <div className="flex flex-1 w-full max-w-7xl px-4">
-          <div className="w-[50%] flex items-center justify-start ml-0 pl-0">
+        <div
+          className="flex flex-1 w-full bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${assets.bg})` }}
+        >
+          <div className="w-[50%] flex items-center justify-start ml-0 pl-0 px-4">
             <div className="w-full max-w-5xl">
               <Carousel />
             </div>
@@ -27,7 +31,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Second section: AboutMe, natural height */}
+      {/* About Me section */}
       <section id="aboutus" className="bg-[#1f5f4b] min-h-screen">
         <AboutMe />
       </section>
@@ -43,26 +47,26 @@ export default function Home() {
       </section>
 
       {/* Recap section */}
-      <section id="tradingrecap" >
+      <section id="tradingrecap">
         <Recap />
       </section>
 
       {/* What section */}
-      <section id="what" >
+      <section id="what">
         <What />
       </section>
 
       {/* Blogs section */}
-      <section id="blog" >
+      <section id="blog">
         <Blogs />
       </section>
 
       {/* Stories section */}
-      <section id="stories" >
+      <section id="stories">
         <Stories />
       </section>
 
-      {/* Ques section */}
+      {/* Questions section */}
       <section id="questions">
         <Ques />
       </section>
@@ -72,6 +76,7 @@ export default function Home() {
         <Connect />
       </section>
 
+      {/* Footer */}
       <Footer />
     </div>
   );

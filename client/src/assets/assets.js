@@ -7,6 +7,7 @@ import trade from './trade.jpeg';
 import graph from './graph.jpg';
 import redexclaim from './redexclaim.png';
 import doubletick from './doubletick.png'
+import bg from './bg.png'
 
 export const carouselCards = [
   {
@@ -186,6 +187,7 @@ export const assets = {
   graph,
   redexclaim,
   doubletick,
+  bg,
 };
 
 
