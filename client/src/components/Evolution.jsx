@@ -39,13 +39,37 @@ const BulletList = ({ points, icon }) => (
   <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 sm:gap-10 p-6 sm:p-10 md:p-16">
     {/* Novice Trader */}
     <div className="flex-1 bg-[#fef2f2] rounded-xl p-6 sm:p-10">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 font-Inter text-black">Novice Trader Mindset</h2>
+     <div className="flex items-center gap-4 mb-6">
+  <div className="bg-red-100 rounded-full p-3">
+    <img
+      src={assets.redexclaim}
+      alt="Red exclamation icon"
+      className="w-6 h-6 sm:w-8 sm:h-8"
+    />
+  </div>
+  <h2 className="text-2xl sm:text-3xl font-bold font-Inter text-black">
+    Novice Trader Mindset
+  </h2>
+</div>
+
       <BulletList points={novicePoints} icon={assets.wrong} />
     </div>
 
     {/* Profitable Trader */}
     <div className="flex-1 bg-[#f0fdf4] rounded-xl p-6 sm:p-10">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 font-Inter text-black">Profitable Trader Mindset</h2>
+     <div className="flex items-center gap-4 mb-6">
+  <div className="bg-green-100 rounded-full p-3">
+    <img
+      src={assets.doubletick}
+      alt="Double tick icon"
+      className="w-6 h-6 sm:w-8 sm:h-8"
+    />
+  </div>
+  <h2 className="text-2xl sm:text-3xl font-bold font-Inter text-black">
+    Profitable Trader Mindset
+  </h2>
+</div>
+
       <BulletList points={profitablePoints} icon={assets.correct} />
     </div>
   </div>

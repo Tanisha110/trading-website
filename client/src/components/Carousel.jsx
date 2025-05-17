@@ -41,7 +41,7 @@ const Carousel = () => {
       <Slider {...settings}>
         {carouselCards.map((card, index) => (
           <div key={index} className="p-4">
-            <div className="bg-white rounded-3xl shadow-lg p-10 md:p-12 text-center h-full flex flex-col justify-between">
+            <div className="bg-transparent w-full border-black border-2 rounded-3xl shadow-lg p-10 px-0 md:p-12 text-center h-full flex flex-col justify-between">
               <div>
                 <h2 className="text-4xl text-left md:text-5xl font-bold text-[#064e3b] uppercase mb-1">
                   {card.title1 + ','}

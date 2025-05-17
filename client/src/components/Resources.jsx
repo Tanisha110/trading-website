@@ -1,5 +1,6 @@
 import React from "react";
 import { resourceCards } from "../assets/assets.js";
+import { ArrowRight } from "lucide-react";
 
 const Resource = () => {
   return (
@@ -30,12 +31,12 @@ const Resource = () => {
             <div className="p-4 flex flex-col flex-grow">
               <h3 className="text-xl font-semibold mb-2">{title}</h3>
               <p className="text-gray-700 flex-grow">{description}</p>
-              <a
-                href={link}
-                className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium"
-              >
-                Read More
-              </a>
+               <a
+                  href={link}
+                  className="flex items-center text-green-700 hover:text-green-800 font-medium"
+                >
+                  Read More <ArrowRight className="ml-1 h-4 w-4" />
+                </a>
             </div>
           </div>
         ))}

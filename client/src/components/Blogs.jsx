@@ -1,87 +1,118 @@
+
 import React from "react";
 import { blogsData, sideBlogs } from "../assets/assets.js";
+import { ArrowRight } from "lucide-react";
 
 const Blogs = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
-      <h1 className="text-black text-3xl sm:text-4xl font-bold mb-8 text-center">
-        Latest Blogs
+      {/* Main Heading with Description */}
+      <h1 className="text-3xl sm:text-4xl font-bold mb-3 text-center text-green-800">
+        Blog's
       </h1>
+      <p className="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+        Explore in-depth articles on trading strategies, market analysis, and psychological insights to
+        enhance your trading journey.
+      </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Big Blog spanning two columns */}
-       {blogsData.map(({ id, title, description, img, author, date, readTime, link }) => (
-  <div
-    key={id}
-    className="lg:col-span-2 bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
-  >
-    <img src={img} alt={title} className="w-full h-72 object-cover" />
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Featured Blog - Left side (8 columns) */}
+        <div className="lg:col-span-8">
+          <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div className="relative">
+              <img 
+                src={blogsData[0].img} 
+                alt={blogsData[0].title} 
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute top-4 left-4">
+                <span className="bg-green-700 text-white text-xs px-3 py-1 rounded-full">
+                  Featured
+                </span>
+              </div>
+            </div>
 
-    {/* Date and Read Time below image */}
-    <div className="px-6 pt-3 text-sm text-gray-500 flex justify-between">
-      <span>{date}</span>
-      <span>{readTime}</span>
-    </div>
-
-    <div className="p-6 flex flex-col">
-      <h2 className="text-2xl font-semibold mb-4">{title}</h2>
-      <p className="text-gray-700 mb-4">{description}</p>
-
-      <div className="flex items-center space-x-4">
-        <img
-          src={author.photo}
-          alt={author.name}
-          className="w-12 h-12 rounded-full object-cover"
-        />
-        <div>
-          <p className="text-gray-900 font-semibold">{author.name}</p>
-          <p className="text-gray-600 text-sm">{author.position}</p>
+            <div className="p-6">
+              <div className="flex justify-between text-sm text-gray-500 mb-2">
+                <span>{blogsData[0].date}</span>
+                <span>{blogsData[0].readTime} read</span>
+              </div>
+              
+              <h2 className="text-2xl font-bold text-gray-800 mb-3">
+                {blogsData[0].title}
+              </h2>
+              
+              <p className="text-gray-600 mb-6">
+                {blogsData[0].description}
+              </p>
+              
+              <div className="flex items-center mb-4">
+                <img
+                  src={blogsData[0].author.photo}
+                  alt={blogsData[0].author.name}
+                  className="w-10 h-10 rounded-full mr-3"
+                />
+                <div>
+                  <p className="text-gray-800 font-medium">{blogsData[0].author.name}</p>
+                  <p className="text-gray-500 text-sm">{blogsData[0].author.position}</p>
+                </div>
+              </div>
+              
+              <div className="flex justify-end">
+                <a
+                  href={blogsData[0].link}
+                  className="flex items-center text-green-700 hover:text-green-800 font-medium"
+                >
+                  Read More <ArrowRight className="ml-1 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <a
-          href={link}
-          className="ml-auto text-blue-600 hover:text-blue-800 font-medium"
-        >
-          Read More
-        </a>
+        {/* Side Blogs - Right side (4 columns) */}
+        <div className="lg:col-span-4 flex flex-col gap-8">
+          {sideBlogs.map((blog, index) => (
+            <div key={blog.id} className="bg-white rounded-lg shadow-sm overflow-hidden">
+              <img
+                src={blog.img}
+                alt={blog.title}
+                className="w-full h-52 object-cover"
+              />
+              
+              <div className="p-5">
+                <div className="flex justify-between text-sm text-gray-500 mb-2">
+                  <span>{blog.date}</span>
+                  <span>{blog.readTime} read</span>
+                </div>
+                
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  {blog.title}
+                </h3>
+                
+                <p className="text-gray-600 mb-4">
+                  {blog.description}
+                </p>
+                
+                <div className="flex justify-end">
+                  <a
+                    href={blog.link}
+                    className="flex items-center text-green-700 hover:text-green-800 font-medium"
+                  >
+                    Read More <ArrowRight className="ml-1 h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  </div>
-))}
 
-     {/* Smaller side blogs */}
-<div className="flex flex-col gap-6 items-center">
-  {sideBlogs.map(({ id, title, description, img, date, readTime, link }) => (
-    <div
-      key={id}
-      className="bg-white rounded-md shadow-md overflow-hidden flex flex-col w-full max-w-sm"
-    >
-      {/* Image with rounded top corners and height */}
-      <img
-        src={img}
-        alt={title}
-        className="w-full h-56 object-cover rounded-md mb-4"
-      />
-
-      {/* Date and Read time */}
-      <div className="flex justify-between px-4 pt-4 text-sm text-gray-500 mb-4">
-        <span>{date}. {readTime}</span>
-      </div>
-
-      <div className="p-4 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold mb-4">{title}</h3>
-        <p className="text-gray-700 flex-grow mb-6">{description}</p>
-        <a
-          href={link}
-          className="mt-auto self-start text-blue-600 hover:text-blue-800 font-medium"
-        >
-          Read More
-        </a>
-      </div>
-    </div>
-  ))}
-</div>
-
+      {/* More Blogs Button */}
+      <div className="flex justify-center mt-10">
+        <button className="bg-green-800 hover:bg-green-900 text-white font-medium py-2 px-6 rounded-md">
+          More Blog's
+        </button>
       </div>
     </div>
   );

@@ -6,7 +6,8 @@ import Evolution from '../components/Evolution';
 import Resources from "../components/Resources";
 import Recap from "../components/Recap";
 import What from "../components/What";
-import Blogs from "../components/Blogs";
+import Blogs from '../components/Blogs';
+import Stories from "../components/Stories";
 export default function Home() {
   return (
     <div className="bg-[#f5fefa] text-black">
@@ -14,7 +15,7 @@ export default function Home() {
       <section className="h-screen flex flex-col items-center">
         <Navbar />
         <div className="flex flex-1 w-full max-w-7xl px-4">
-          <div className="w-[70%] flex items-center justify-start ml-0 pl-0">
+          <div className="w-[50%] flex items-center justify-start ml-0 pl-0">
             <div className="w-full max-w-5xl">
               <Carousel />
             </div>
@@ -39,6 +40,7 @@ export default function Home() {
       <Recap/>
       <What/>
       <Blogs/>
+      <Stories/>
     </div>
   );
 }

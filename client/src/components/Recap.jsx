@@ -1,5 +1,6 @@
 import React from "react";
 import { recapCards } from "../assets/assets.js";
+import { ArrowRight } from "lucide-react";
 
 const Recap = () => {
   return (
@@ -33,11 +34,11 @@ const Recap = () => {
                 <span className="font-semibold text-gray-400">
                   Success Rate: {successrate}
                 </span>
-                <a
+                 <a
                   href={link}
-                  className="text-green-700 hover:text-blue-800 font-medium"
+                  className="flex items-center text-green-700 hover:text-green-800 font-medium"
                 >
-                  Learn More
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
                 </a>
               </div>
             </div>

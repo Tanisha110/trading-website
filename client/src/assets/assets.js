@@ -5,6 +5,8 @@ import correct from './correct.png';
 import wrong from './wrong.png';
 import trade from './trade.jpeg';
 import graph from './graph.jpg';
+import redexclaim from './redexclaim.png';
+import doubletick from './doubletick.png'
 
 export const carouselCards = [
   {
@@ -73,7 +75,7 @@ export const resourceCards=[
 export const recapCards=[
   {
     title: '1-2-3 Chopstick pattern',
-    description:'Discover the psychological framework that seprate consistent winners from the others', 
+    description:'A reliable reversal pattern consisting of these consecutive candlesticks, including a potential trend change', 
     successrate:'78',
     img: graph,
     link:'/',
@@ -154,6 +156,20 @@ export const sideBlogs = [
     link: "/blogs/manage-risk",
   },
 ];
+export const stories=[
+  {
+    quote: "1Michael's analytical approach to market psychology was exactly what I needed. I've reduced my emotional trading and increased my win rate by 35% in just three months.",
+    image: trade,
+  },
+  {
+    quote: "2Michael's analytical approach to market psychology was exactly what I needed. I've reduced my emotional trading and increased my win rate by 35% in just three months.",
+    image: trade,
+  },
+  {
+    quote: "3Michael's analytical approach to market psychology was exactly what I needed. I've reduced my emotional trading and increased my win rate by 35% in just three months.",
+    image: trade,
+  },
+]
 export const assets = {
   logo,
   left,
@@ -162,6 +178,8 @@ export const assets = {
   wrong,
   trade,
   graph,
+  redexclaim,
+  doubletick,
 };
 
 
