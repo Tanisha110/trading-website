@@ -23,9 +23,9 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-300 opacity-50">
             <li><a href="#home" className="hover:text-white">Home</a></li>
             <li><a href="#resources" className="hover:text-white">Resources</a></li>
-            <li><a href="#recap" className="hover:text-white">Trading Recap</a></li>
-            <li><a href="#blogs" className="hover:text-white">Blog</a></li>
-            <li><a href="#connect" className="hover:text-white">Contact</a></li>
+            <li><a href="#tradingrecap" className="hover:text-white">Trading Recap</a></li>
+            <li><a href="#blog" className="hover:text-white">Blog</a></li>
+            <li><a href="#contact" className="hover:text-white">Contact</a></li>
           </ul>
         </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-300 opacity-50">
             <li><a href="/pricing" className="hover:text-white">Pricing</a></li>
             <li><a href="#questions" className="hover:text-white">FAQ</a></li>
-            <li><a href="#connect" className="hover:text-white">Contact</a></li>
+            <li><a href="#contact" className="hover:text-white">Contact</a></li>
           </ul>
         </div>
 

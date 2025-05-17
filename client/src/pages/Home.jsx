@@ -28,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* Second section: AboutMe, natural height */}
-      <section id="about" className="bg-[#1f5f4b] min-h-screen">
+      <section id="aboutus" className="bg-[#1f5f4b] min-h-screen">
         <AboutMe />
       </section>
 
@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* Recap section */}
-      <section id="recap" >
+      <section id="tradingrecap" >
         <Recap />
       </section>
 
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
 
       {/* Blogs section */}
-      <section id="blogs" >
+      <section id="blog" >
         <Blogs />
       </section>
 
@@ -68,7 +68,7 @@ export default function Home() {
       </section>
 
       {/* Connect section */}
-      <section id="connect">
+      <section id="contact">
         <Connect />
       </section>
 
